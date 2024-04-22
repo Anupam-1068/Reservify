@@ -37,12 +37,13 @@ const formattedOneWeekFromToday = format(oneWeekFromToday, 'yyyy-MM-dd');
 
 
   const onSubmit = async(data) => {
+    console.log(data);
       try {
         const emailContent = `
         
 Hello ${data.name},
 
-You have successfully booked your spot at ${data.place} for ${data.time}.
+You have successfully booked your spot at ${spaceName} for ${data.time}.
         
 We're excited to welcome you and ensure you have a wonderful experience. Should you have any questions or need assistance, feel free to reach out to us.
         
